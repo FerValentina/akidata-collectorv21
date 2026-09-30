@@ -1,0 +1,26 @@
+# Local secrets (never upload credentials)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Operating system and editors
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*.tmp
+*.bak
+*.log
+
+# Local tooling and generated dependencies
+node_modules/
+.cache/
+tmp/
+playwright-report/
+test-results/

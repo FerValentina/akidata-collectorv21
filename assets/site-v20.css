@@ -1,0 +1,100 @@
+/* v20: compact Collector hero; v18 editorial industries and corporate identity. */
+.industry-section,.industries-section{background:#f7f8fa}
+.industry-table-scene{max-width:1180px;margin:0 auto;padding:0;background:none;border:0}
+.industry-table-scene::before,.industry-table-scene::after{display:none}
+.industry-stories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.industry-story{border-radius:20px;overflow:hidden;display:flex;flex-direction:column;min-width:0;background:var(--story-color);color:#fff;box-shadow:none;--story-color:#744099}
+.industry-retail{--story-color:#35602b}.industry-construction{--story-color:#1856a3}.industry-mining{--story-color:#075f73}.industry-agriculture{--story-color:#486329}.industry-services{--story-color:#544588}
+.industry-media{aspect-ratio:1.65;overflow:hidden;background:#deece8}
+.industry-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.industry-story-body{padding:24px 26px 28px;min-height:188px;flex:1}
+.industry-label{display:inline-flex;gap:4px;align-items:center;padding:5px 8px;margin-bottom:18px;background:rgba(255,255,255,.92);color:var(--story-color);font:600 10px/1.2 var(--font-sans);letter-spacing:.06em}
+.industry-story h3{font-size:23px;line-height:1.18;color:#fff;font-weight:600;margin:0 0 13px;letter-spacing:-.025em}
+.industry-story p{font-size:14px;line-height:1.65;color:#fff;margin:0;max-width:34ch}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.industry-story:hover .industry-media img{transform:scale(1.025)}}
+.site-footer{position:relative;isolation:isolate;background:#071a2d;color:#d4e4ec;border-top:1px solid #1d354a;padding:76px 0 20px}
+.site-footer::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;opacity:.35;background:radial-gradient(circle at 8% 32%,#409ab0 0 1px,transparent 2px),radial-gradient(circle at 41% 18%,#409ab0 0 1px,transparent 2px),radial-gradient(circle at 72% 68%,#409ab0 0 1px,transparent 2px),radial-gradient(circle at 93% 21%,#409ab0 0 1px,transparent 2px)}
+.site-footer .footer-grid{grid-template-columns:1.4fr repeat(3,1fr);gap:60px;padding-bottom:55px}
+.site-footer .footer-brand .company-lockup{display:inline-flex;margin-bottom:18px}
+.site-footer .footer-brand .company-lockup img{width:104px;height:104px;max-width:none;max-height:none;filter:none;box-shadow:0 0 30px rgba(0,190,197,.16);border-radius:50%;object-fit:contain}
+.site-footer .company-lockup strong{display:none}
+.site-footer .company-link{color:#e1f3f5;font-size:15px;margin:0 0 14px}
+.site-footer .footer-brand p{font-size:14px;line-height:1.7;color:#afc4d3;margin:0 0 17px;max-width:310px}
+.site-footer .footer-column h3{color:#f1f7fb;font-size:12px;letter-spacing:.1em;margin:5px 0 16px}
+.site-footer .footer-column a,.site-footer .footer-column button,.site-footer .footer-brand>button{color:#aec3d2;font-size:14px;line-height:1.7}
+.site-footer .footer-column a:hover,.site-footer .footer-column button:hover,.site-footer .footer-brand>button:hover,.site-footer .company-link:hover{color:#01d8e7}
+.site-footer .footer-bottom{border-color:#244055;color:#8eaabc;font-size:11px}
+
+.product-page .industries-section{color:#162832}
+.product-page .industries-section .section-number{color:#00747b}
+.product-page .industries-section .section-header>p{color:#526778}
+.product-page .industries-section h2 em{color:#006887}
+.product-page .industry-story{border:0;background:var(--story-color)}
+.product-page .industry-media{display:block;padding:0;color:inherit}
+.product-page .industry-story-body{border:0}
+.product-page .industry-label{border:0;border-radius:0}
+.product-page .site-footer{--green:#00747b;--muted:#afc4d3;--dark:#071a2d;font-family:Arial,Helvetica,sans-serif;letter-spacing:normal}
+.product-page .site-footer::before{display:block}
+.site-footer .footer-brand .company-lockup img{box-shadow:0 0 30px rgba(0,190,197,.16)!important}
+.product-page .site-nav .product-brand,.product-page .mobile-menu-head img{background:transparent;padding:0;border-radius:0;box-shadow:none}
+.site-nav .product-brand img,.company-page .site-nav .product-brand img{width:84px;height:56px;object-fit:contain;border-radius:0}
+.company-page .mobile-menu-head img{width:84px;height:56px;max-height:none;object-fit:contain}
+.product-page .hero-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,80px);align-items:center}
+.product-page .product-hero{padding:158px 0 82px;overflow:hidden}
+.product-page .hero-message{grid-column:2;grid-row:1;max-width:630px}
+/* Keep this headline scale as the baseline for future versions. */
+.product-page .hero-message h1{font-size:clamp(38px,4.25vw,62px);line-height:1.1;letter-spacing:-.035em;max-width:16ch}
+.product-page .hero-message>p{font-size:16px;line-height:1.65}
+.product-page .product-showcase{grid-column:1;grid-row:1;justify-self:center;margin:0;max-width:600px;padding:18px;width:100%;border-radius:28px;box-shadow:none;transform:none}
+.product-page .product-showcase>.hero-anim{aspect-ratio:1.13;margin:0}
+.product-page .ha-file{width:26%;padding:9px}
+.product-page .ha-file.f1{left:7%;top:17%}.product-page .ha-file.f2{right:8%;top:19%}.product-page .ha-file.f3{left:13%;bottom:18%}.product-page .ha-file.f4{right:13%;bottom:14%}.product-page .ha-file.f5{left:37%;top:39%}
+.product-page .outcomes-section{padding-top:90px}
+.partners-grid{max-width:1180px;margin-inline:auto;gap:24px}
+.partner-card{min-height:0;grid-template-columns:155px minmax(0,1fr);align-items:stretch}
+.partner-logo{min-height:0;max-height:none;max-width:none;width:auto;margin:18px 0 18px 18px;padding:16px;border:0;border-radius:14px;align-self:stretch}
+.partner-logo img{width:100%;max-width:155px;max-height:85px;object-fit:contain}
+.partner-body{padding:24px;min-width:0}
+.partner-body h3{margin:12px 0 0;font-size:20px;line-height:1.2}
+.partner-body p{font-size:13px;line-height:1.6;margin:12px 0 18px}
+.partner-code{font-size:10px}.partner-tag{margin-top:auto;font-size:10px;padding:6px 9px}
+.company-page .partner-logo{background:#fff}
+@media(max-width:1240px){.partner-card{grid-template-columns:120px minmax(0,1fr)}.partner-body{padding:22px 18px}.partner-logo{padding:12px;margin:16px 0 16px 16px}}
+@media(max-width:980px){.product-page .product-hero{padding:132px 0 68px}.product-page .hero-layout{gap:28px}.product-page .hero-message h1{font-size:38px}.product-page .product-showcase{padding:12px}.product-page .hero-actions{gap:12px}.product-page .hero-actions .button,.product-page .hero-actions .text-link{font-size:13px;padding:12px 16px}.industry-stories{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.partner-card{grid-template-columns:1fr}.partner-logo{height:92px;max-width:180px;margin:18px 22px 0}.partner-body{padding:18px 22px 22px}.partner-logo img{max-height:64px}.site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:38px}}
+@media(max-width:680px){.site-nav .product-brand img,.company-page .site-nav .product-brand img{width:70px;height:47px}.product-page .site-nav .product-brand{padding:0}.product-page .product-hero{padding:116px 0 58px}.product-page .hero-layout{grid-template-columns:1fr;gap:30px}.product-page .hero-message{grid-column:1;grid-row:1}.product-page .hero-message h1{font-size:clamp(36px,9vw,44px);max-width:16ch}.product-page .product-showcase{grid-column:1;grid-row:2;margin:0;max-width:480px}.product-page .outcomes-section{padding-top:60px}.industry-stories{grid-template-columns:1fr;max-width:430px;margin:auto}.industry-story-body{min-height:0;padding:23px 25px 27px}.industry-media{aspect-ratio:1.65}.partners-grid{grid-template-columns:1fr}.partner-card{grid-template-columns:105px minmax(0,1fr)}.partner-logo{height:auto;margin:16px 0 16px 16px;max-width:none;padding:10px}.partner-body{padding:20px 16px}.partner-body h3{font-size:18px}.partner-body p{font-size:13px}.partner-tag{font-size:9px}.site-footer{padding-top:50px}.site-footer .footer-grid{gap:32px 24px}.site-footer .footer-brand{grid-column:1/-1}.site-footer .footer-brand .company-lockup img{width:94px;height:94px}}
+@media(max-width:380px){.partner-card{grid-template-columns:1fr}.partner-logo{width:150px;height:75px;margin:18px 20px 0}.partner-body{padding:16px 20px 22px}}
+
+/* In-place refinement requested for v20, September 2026. */
+.page-wide{width:85%;max-width:none;padding-inline:0}
+.industry-table-scene,.partners-grid{max-width:none}
+.product-page .hero-message{max-width:none}
+.site-nav,.site-nav.scrolled{width:85%;max-width:none}
+.product-page :is(.outcomes-section,.governance-section,.industries-section,.faq-section) h2{color:#182832}
+.product-page :is(.outcomes-section,.governance-section,.industries-section,.faq-section) h2 em{color:#20599e}
+.product-page :is(.outcomes-section,.governance-section,.industries-section,.faq-section) :is(.section-number,.section-dark-number,.eyebrow){color:#20599e}
+:is(.platform-section,.governance-section,.industries-section,.plans-section,.partners-section,.products-section,.final-cta) h2 em{display:block;margin-top:.13em}
+.product-page :is(.platform-section,.plans-section,.partners-section,.final-cta) h2 em{color:#fff;border:1px dashed #00b1ff;border-radius:7px;padding:.04em .15em .1em;width:fit-content;max-width:100%}
+.product-page .closing-content h2{max-width:none}
+.closing-content h2 em{margin-inline:auto}
+.product-page .site-footer{background:#101047;border-top:1px solid #30306d}
+.product-page .site-footer .footer-brand .company-lockup img{width:104px;height:104px;border-radius:0;object-fit:contain;box-shadow:none!important;filter:drop-shadow(0 0 12px rgba(177,166,246,.18))}
+.company-page{--green:#006b70;--green-2:#006b70;--action:#006b70;--cyan:#70d4b1}
+.company-page .button-green,.company-page .button-cyan{background:#006b70;box-shadow:none}
+.company-page .button-green:hover,.company-page .button-cyan:hover{background:#005257}
+.company-page :is(h1,h2) em,.company-page .section h2 em{color:#006b70}
+.company-page .final-cta h2 em{color:#70d4b1}
+.company-page .company-principles>div{color:#006b70}
+.company-page .company-principles>div:nth-child(even){background:#dff0ed}
+.company-page .company-hero .company-lockup img{width:90px;height:90px;max-width:none;max-height:none}
+.company-page .nav-link:hover,.company-page .nav-link.is-active{color:#006b70}
+.company-page .nav-link::after,.company-page .nav-progress span{background:#006b70}
+.company-page .lang-toggle button[aria-pressed="true"]{color:#006b70;background:#e0f2eb}
+.company-page .site-footer :is(.footer-column a,.footer-column button,.footer-brand>button,.company-link):hover{color:#70d4b1}
+.modal-intro img{width:92px;height:92px;max-width:none;max-height:none;object-fit:contain;margin-bottom:24px}
+body{transition:opacity 180ms ease}
+body.page-leaving{opacity:0}
+@keyframes v20-page-enter{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:no-preference){body{animation:v20-page-enter 280ms ease both}body.page-leaving{animation:none}}
+@media(max-width:980px){.page-wide{width:90%}.site-nav,.site-nav.scrolled{width:94%}}
+@media(max-width:680px){.page-wide{width:calc(100% - 40px)}.site-nav,.site-nav.scrolled{width:calc(100% - 24px)}.industry-stories{max-width:430px}.company-page .company-hero .company-lockup img{width:78px;height:78px}.modal-intro img{width:80px;height:80px}.product-page .site-footer .footer-brand .company-lockup img{width:94px;height:94px}}
+@media(prefers-reduced-motion:reduce){body{transition:none;animation:none}body.page-leaving{opacity:1}}

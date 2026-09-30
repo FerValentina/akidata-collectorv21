@@ -1,0 +1,36 @@
+/* v21: balanced Manrope + Monda, bilingual hero typewriters and brand pointers. */
+@font-face{font-family:Monda;src:url('./monda-variable.ttf') format('truetype');font-weight:400 700;font-style:normal;font-display:swap}
+@font-face{font-family:Manrope;src:url('./manrope-variable.ttf') format('truetype');font-weight:200 800;font-style:normal;font-display:swap}
+.product-page .site-nav .product-brand img{width:150px;height:62px;max-height:none;object-fit:contain}
+.company-page .site-nav .product-brand img{width:102px;height:64px;max-height:none}
+.product-page .mobile-menu-head img{width:150px;height:62px;object-fit:contain}
+main :is(h1,h2) em,.company-page main :is(h1,h2) em,.product-page .hero-message h1 .typewriter-word{font-family:Monda,Arial,sans-serif;font-weight:500;letter-spacing:-.025em}
+.product-page main :is(.section,.final-cta) h2 em,.company-page main :is(.section,.final-cta) h2 em{font-family:Monda,Arial,sans-serif;font-weight:500;overflow-wrap:break-word}
+.product-page main :is(.section,.final-cta) h2,.company-page main :is(h1,h2){font-family:Manrope,Arial,sans-serif;font-weight:500}
+.company-page .company-intro h1{max-width:18ch}
+.company-page .company-intro h1 em{display:block}
+.company-page .typewriter-word{color:#006b70}
+.company-page .collector-pointer-ring{border-color:rgba(0,107,112,.7)}
+.company-page .collector-pointer img{filter:drop-shadow(0 0 3px rgba(0,107,112,.25))}
+.product-page .hero-message h1 em{font-family:Manrope,Arial,sans-serif;font-weight:500}
+.product-page .hero-message h1{max-width:18ch;font-weight:500}
+.platform-sticky{container-type:inline-size}
+.product-page main .platform-section .platform-sticky h2 em{white-space:nowrap;overflow-wrap:normal;font-size:clamp(24px,10.5cqi,44px);max-width:100%;line-height:1.15}
+.product-page main .platform-section .platform-sticky h2.en em{font-size:clamp(20px,8.5cqi,36px)}
+.typewriter-word{display:inline-grid;position:relative;vertical-align:baseline;color:#00b1ff;white-space:nowrap}
+.typewriter-reserve,.typewriter-output{grid-area:1/1;min-width:0}
+.typewriter-reserve{visibility:hidden;padding-right:.08em}
+.typewriter-output{justify-self:start}
+.typewriter-output::after{content:'';display:inline-block;width:2px;height:.86em;margin-left:.04em;background:currentColor;vertical-align:-.04em}
+.typewriter-word.is-resting .typewriter-output::after{opacity:0}
+.typewriter-accessible{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.collector-pointer,.collector-pointer-ring{position:fixed;left:0;top:0;pointer-events:none;z-index:1000;opacity:0;transition:opacity .15s;will-change:transform}
+.collector-pointer{width:16px;height:16px;display:grid;place-items:center}
+.collector-pointer img{width:16px;height:16px;display:block;filter:drop-shadow(0 0 3px rgba(0,177,255,.3))}
+.collector-pointer-ring{width:38px;height:38px;border:1px solid rgba(0,177,255,.65);border-radius:50%}
+.collector-pointer.is-visible,.collector-pointer-ring.is-visible{opacity:1}
+@media(max-width:1100px){.site-nav .nav-links{display:none}.site-nav .nav-actions{margin-left:auto}.mobile-toggle{display:flex;flex-direction:column;justify-content:center;gap:6px;width:32px;height:36px;padding:5px;background:none}.mobile-toggle span{display:block;width:22px;height:2px;flex:0 0 2px;margin:0}.product-page .mobile-toggle span{background:white}.product-page .product-menu{display:none}}
+@media(max-width:680px){.product-page .site-nav .product-brand img{width:126px;height:49px}.company-page .site-nav .product-brand img{width:82px;height:51px}.product-page .hero-message h1{font-size:clamp(36px,9vw,44px);max-width:none}}
+@media(prefers-reduced-motion:reduce),(hover:none),(pointer:coarse){.collector-pointer,.collector-pointer-ring{display:none}}
+@media(prefers-reduced-motion:reduce){.typewriter-output::after{display:none}}
+@media(max-width:680px){.company-page .company-intro h1{font-size:clamp(36px,9vw,44px);max-width:none}}
